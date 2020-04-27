@@ -2,6 +2,7 @@
 marp: true
 theme: gaia
 paginate: true
+backgroundColor: white
 ---
 
 <!-- #4C2E84 -->
@@ -61,12 +62,24 @@ paginate: true
 
 ----------------------------------------------------------------
 
+## class imbalance visualized
+
+- test is 92% correct if you have the disease, 75% if you don't have the disease
+- you **tested positive**, what's **the probability you're actually sick**?
+- image source: [theconversation.com]
+
+![bg right w:650](./images/sensitivity-vs-specificity.jpg)
+
+[theconversation.com]: https://theconversation.com/paradoxes-of-probability-and-other-statistical-strangeness-74440
+
+----------------------------------------------------------------
+
 ## the confusion matrix (two-class)
 
 - it's really not that confusing!
 
-|                   | predicted positive   | predicted negative  |
-|-------------------|----------------------|---------------------|
+| actual \ predicted | predicted positive   | predicted negative  |
+|--------------------|----------------------|---------------------|
 | **actually positve**  | true positive `TP`   | false negative `FN` |
 | **actually negative** | false positive `FP`  | true negative `TN`  |
 
@@ -91,10 +104,10 @@ paginate: true
 - **accuracy** is just the misclassification rate
 - **precision** is the percentage of positive predictions that were actually positive
 - **recall** is the percentage of positive cases that we correctly predicted as such
-- image source: [wikipedia]
+- image source: [wikipedia.org]
 ![bg right w:400](./images/precision_recall_wikipedia.jpg)
 
-[wikipedia]: https://en.wikipedia.org/wiki/Precision_and_recall
+[wikipedia.org]: https://en.wikipedia.org/wiki/Precision_and_recall
 
 ----------------------------------------------------------------
 
@@ -116,6 +129,17 @@ here's an analogy that to why we should evaluate a classification model's accura
   - **the whole truth**: no lie of omission
   - **nothing but the truth**: no lies
 - relate the above two statements to precision and recall
+
+----------------------------------------------------------------
+
+## ROC curve
+
+- good for **comparing models** (closer to top left corner means better model)
+- TPR is **true positive rate**, i.e. **recall**
+- FPR is **false positive rate**
+- curve shows trade-offs in TPR and FPR as we vary the threshold
+
+![bg right w:600](./images/roc-curve.jpg)
 
 ----------------------------------------------------------------
 

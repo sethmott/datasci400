@@ -2,6 +2,7 @@
 marp: true
 theme: gaia
 paginate: true
+backgroundColor: white
 ---
 
 <!-- #4C2E84 -->
@@ -71,7 +72,7 @@ paginate: true
 ## some examples
 
 - a timestamp column by default inherits the `object` type because it contains non-numeric characters: needs to converted to `datetime` **explicitly** (using `pd.to_datetime`)
-- a `category` column by default inherits the `object` type and needs to be explicity converted to `categorical` when doing so is appropritate (when the categories are **few and well-defined**)
+- a `category` column by default inherits the `object` type and needs to be explicity converted to `category` when doing so is appropritate (when the categories are **few and well-defined**)
 - the choice of `int64` vs `int32` etc. affects storage and precision
 - a categorical is often **encoded** using integers, which means `pandas` reads it as `int` and we have to convert it to `object` or `catgory`
 
@@ -90,8 +91,6 @@ many datasets come with a **data dictionary**, which is just a description of th
 ----------------------------------------------------------------
 
 ## scatter plot matrix
-
-<!-- _backgroundColor: white; -->
 
 - a quick way to explore all numeric columns at once
 - do this on a **sample** of the data if data size is large

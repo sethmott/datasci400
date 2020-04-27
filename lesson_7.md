@@ -2,6 +2,7 @@
 marp: true
 theme: gaia
 paginate: true
+backgroundColor: white
 ---
 
 <!-- #4C2E84 -->
@@ -65,7 +66,7 @@ paginate: true
 - the white crosses are **cluster centroids**
 - the colors show which cluster you get **assigned to** based on where you landed
 
-source: [https://scikit-learn.org]
+image source: [scikit-learn.org]
 
 ![bg right w:700](images/k-means-clustering.jpg)
 
@@ -80,7 +81,7 @@ source: [https://scikit-learn.org]
 - the colors of regions show **decision boundaries**
 - larger $k$ makes decision boundary **smoother**
 
-source: [https://scikit-learn.org]
+image source: [scikit-learn.org]
 
 ![bg right w:700](images/k-nearest-neighbor.jpg)
 
@@ -124,13 +125,11 @@ source: [https://scikit-learn.org]
 
 ----------------------------------------------------------------
 
-<!-- _backgroundColor: white; -->
-
 ![bg w:400](images/k-means-noncircular-shapes.jpg)
 ![bg w:400](images/k-means-incorrect-k.jpg)
 ![bg w:400](images/k-means-unequal-variance.jpg)
 
-source: [https://scikit-learn.org]
+image source: [scikit-learn.org]
 
 [https://scikit-learn.org]: https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_assumptions.html#sphx-glr-auto-examples-cluster-plot-kmeans-assumptions-py
 
@@ -141,7 +140,7 @@ source: [https://scikit-learn.org]
 - we are too **conservative** in our choice of $k$
 - we can catch this by **increasing** $k$ and noticing a big drop in within-cluster **variability**
 
-source: [https://scikit-learn.org]
+image source: [scikit-learn.org]
 
 ![bg right w:600](images/k-means-incorrect-k.jpg)
 
@@ -155,7 +154,7 @@ source: [https://scikit-learn.org]
 - we can avoid this by **not** including features that are **highly correlated**
 - we can try certain **transformations**, e.g. rotation or PCA
 
-source: [https://scikit-learn.org]
+image source: [scikit-learn.org]
 
 ![bg right w:600](images/k-means-noncircular-shapes.jpg)
 
@@ -169,7 +168,7 @@ source: [https://scikit-learn.org]
 - this is a **tough** one
 - we can try to rerun k-means many times and see which cluster the **borderline points** get assigned to most
 
-source: [https://scikit-learn.org]
+image source: [scikit-learn.org]
 
 ![bg right w:600](images/k-means-unequal-variance.jpg)
 

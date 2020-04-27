@@ -2,6 +2,7 @@
 marp: true
 theme: gaia
 paginate: true
+backgroundColor: white
 ---
 
 <!-- #4C2E84 -->
@@ -132,8 +133,6 @@ let's look at credit rating use case
 
 ----------------------------------------------------------------
 
-<!-- _backgroundColor: white; -->
-
 ![bg w:1200](./images/machine-learning-process.jpg)
 
 ----------------------------------------------------------------
@@ -146,8 +145,6 @@ let's look at credit rating use case
 - a good model is one that neither underfits nor overfits
 
 ----------------------------------------------------------------
-
-<!-- _backgroundColor: white; -->
 
 ![bg w:700](./images/overfitting-vs-underfitting.jpg)
 

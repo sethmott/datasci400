@@ -2,6 +2,7 @@
 marp: true
 theme: gaia
 paginate: true
+backgroundColor: white
 ---
 
 <!-- #4C2E84 -->
@@ -120,14 +121,13 @@ paginate: true
 
 ## three essential skills
 
-<!-- _backgroundColor: white; -->
 ![bg right w:600](images/three-skills.jpg)
 
 - **programming skills**: SQL, Python, R, Scala, Java, ...
 - **math & stats**: linear algebra, probability and statistics, data viz, ...
 - **domain knowledge**: whatever field you're in
 
-Source: [Drew Conway]
+image source: [Drew Conway]
 
 [Drew Conway]: www.dataists.com/2010/09/the-data-science-venn-diagram/
 
@@ -253,7 +253,6 @@ return to the simplified credit rating example from earlier, and try to guess wh
 
 ----------------------------------------------------------------
 
-<!-- _backgroundColor: white; -->
 ![bg w:1200](images/gartner_four_analytics.jpg)
 
 ----------------------------------------------------------------
@@ -261,5 +260,4 @@ return to the simplified credit rating example from earlier, and try to guess wh
 <!-- _class: lead -->
 ## the end
 
-<!-- _backgroundColor: white; -->
 <!-- ![bg w:800](images/data-science-workflow.jpg) -->
