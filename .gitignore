@@ -7,3 +7,5 @@ images
 instructor
 .ipynb_checkpoints
 *delete_me*
+*.dot
+*.png
